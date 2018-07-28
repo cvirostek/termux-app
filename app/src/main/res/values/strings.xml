@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
    <string name="application_name">Termux</string>
+   <string name="task_activity_label">Termux Task</string>
    <string name="shared_user_label">Termux user</string>
    <string name="new_session">New session</string>
    <string name="new_session_failsafe">Failsafe</string>
