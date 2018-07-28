@@ -25,7 +25,7 @@ import java.nio.charset.StandardCharsets;
 
 public class TermuxFileReceiverActivity extends Activity {
 
-    static final String TERMUX_RECEIVEDIR = TermuxService.FILES_PATH + "/home/downloads";
+    static final String TERMUX_RECEIVEDIR = TermuxService.PREFIX_PATH + "/tmp";
 
     // These values may be overridden by TermuxBackgroundFileReceiverActivity.
     String EDITOR_PROGRAM_BASE = "/bin/termux-file-editor";
