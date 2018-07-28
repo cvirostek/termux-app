@@ -84,38 +84,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.termux.filepicker.TermuxBackgroundFileReceiverActivity"
-            android:label="@string/background_task_label"
-            android:taskAffinity="com.termux.filereceiver"
-            android:excludeFromRecents="true"
-            android:resizeableActivity="true"
-            android:noHistory="true"
-            android:theme="@android:style/Theme.NoDisplay">
-            <!-- Accept multiple file types when sending. -->
-            <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="application/*" />
-                <data android:mimeType="audio/*" />
-                <data android:mimeType="image/*" />
-                <data android:mimeType="message/*" />
-                <data android:mimeType="multipart/*" />
-                <data android:mimeType="text/*" />
-                <data android:mimeType="video/*" />
-            </intent-filter>
-            <!-- Be more restrictive for viewing files, restricting ourselves to text files. -->
-            <intent-filter tools:ignore="AppLinkUrlError">
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="text/*" />
-                <data android:mimeType="application/json" />
-                <data android:mimeType="application/*xml*" />
-                <data android:mimeType="application/*latex*" />
-                <data android:mimeType="application/javascript" />
-            </intent-filter>
-        </activity>
-
         <activity-alias
             android:name=".HomeActivity"
             android:targetActivity="com.termux.app.TermuxActivity">
